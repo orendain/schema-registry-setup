@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-PROJ_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
+PROJ_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Move to tmp directory
 cd /tmp
@@ -30,4 +30,3 @@ perl -pi -e 's/registry_password/R12034ore/g' /usr/hdf/current/registry/conf/reg
 
 # Install Schema Registry nar file
 cp $PROJ_DIR/nifi-registry-nar-0.0.1-SNAPSHOT.nar /usr/hdf/current/nifi/lib
-
