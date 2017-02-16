@@ -29,7 +29,8 @@ mysql -u root -phadoop < tmpQuery.sql
 
 # Edit configs with appropriate values
 echo "Setting default Schema Registry configuration"
-perl -pi -e 's/9090/$registryPort/g' -e 's/registry_password/$registryPass/g' $registryDir/conf/registry.yaml
+perl -pi -e "s/9090/$registryPort/g" $registryDir/conf/registry.yaml
+perl -pi -e "s/registry_password/$registryPass/g" $registryDir/conf/registry.yaml
 
 # Bootstrap storage and follow-up with starting in daemon mode
 echo "Bootstrapping and starting Schema Registry"
