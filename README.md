@@ -10,4 +10,4 @@ schema-registry-setup/setup.sh
 
 That's it! :)
 
-Note: Private repo until further notice.
+> Note: Private repo until further notice.
