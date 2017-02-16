@@ -1,6 +1,6 @@
 # Schema Registry Setup
 
-This installs and configures Schema Registry onto the latest HDF/HDP Sandbox.  It also installs a Schema Registry NiFi nar for NiFi integration.
+This installs and configures Schema Registry in your HDF/HDP Sandbox.  It also installs a Schema Registry NiFi nar for NiFi integration.
 
 Run the following in the sandbox:
 ```
