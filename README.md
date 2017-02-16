@@ -4,7 +4,7 @@ This installs and configures Schema Registry in your HDF/HDP Sandbox.  It also i
 
 Run the following in the sandbox:
 ```
-git clone https://github.com/orendain/schema-registry-setup
+git clone https://github.com/orendain/schema-registry-setup.git
 schema-registry-setup/setup.sh
 ```
 
