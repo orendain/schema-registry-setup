@@ -6,7 +6,7 @@ projDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 registryUserName="registry_user"
 registryPass="R12034ore"
-registryPort=8090
+registryPort=15005
 
 platformDir=$(find / -maxdepth 3 -type d -wholename '/usr/hd*/[0-9]*' -print -quit)
 registryDir=$platformDir/registry
@@ -39,4 +39,4 @@ $registryDir/bin/registry start
 
 # Install Schema Registry nar file
 echo "Installing NiFi NAR file for NiFi integration, restart NiFi for change to take effect"
-cp $projDir/nifi-registry-nar-0.0.1-SNAPSHOT.nar $platformDir/nifi/lib
+cp $projDir/nifi-registry-nar-0.0.1-SNAPSHOT.nar $platformDir/nifi/li
