@@ -39,4 +39,4 @@ $registryDir/bin/registry start
 
 # Install Schema Registry nar file
 echo "Installing NiFi NAR file for NiFi integration, restart NiFi for change to take effect"
-cp $projDir/nifi-registry-nar-0.0.1-SNAPSHOT.nar $platformDir/nifi/li
+cp $projDir/nifi-registry-nar-0.0.1-SNAPSHOT.nar $platformDir/nifi/lib
