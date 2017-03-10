@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-schemaVer="0.0.1.3.0.0.0-97"
+schemaVer="0.0.1.3.0.0.0-55"
 projDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 registryUserName="registry_user"
