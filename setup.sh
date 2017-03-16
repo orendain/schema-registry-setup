@@ -8,7 +8,7 @@ registryUserName="registry_user"
 registryPass="R12034ore"
 registryPort=15005
 
-platformDir=$(find / -maxdepth 3 -type d -wholename '/usr/hd*/[0-9]*' -print -quit)
+platformDir=$(find / -maxdepth 3 -type d -wholename '/usr/hd*/[0-9]*' -print -quit 2> /dev/null)
 registryDir=$platformDir/registry
 
 
