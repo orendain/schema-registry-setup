@@ -28,7 +28,7 @@ ln -s $registryDir $(dirname $platformDir)/current
 
 # (Sandbox only, due to default username/pass)
 echo "Creating necessary database entries"
-echo "create database '$registryDB'; CREATE USER '$registryUserName'@'localhost' IDENTIFIED BY '$registryPass'; GRANT ALL PRIVILEGES ON '$registryDB'.* TO '$registryUserName'@'localhost' WITH GRANT OPTION;" > tmpQuery.sql
+echo "create database $registryDB; CREATE USER '$registryUserName'@'localhost' IDENTIFIED BY '$registryPass'; GRANT ALL PRIVILEGES ON $registryDB.* TO '$registryUserName'@'localhost' WITH GRANT OPTION;" > tmpQuery.sql
 mysql -u $mysqlUserName -p$mysqlPass < tmpQuery.sql
 
 # Edit configs with appropriate values
