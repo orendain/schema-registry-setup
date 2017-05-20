@@ -7,7 +7,7 @@ projDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 registryDB="registry_db"
 registryUserName="registry_user"
 registryPass="registry_pass"
-registryPort=15005
+registryPort=15105
 
 mysqlUserName="root"
 mysqlPass="hadoop"
